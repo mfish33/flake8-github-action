@@ -10,6 +10,9 @@ inputs:
 
       Generally the same as the job that uses this action'
     required: true
+  path:
+    description: path to run flake8 inside of
+    default: "."
 runs:
   using: 'node12'
   main: 'lib/main.js'

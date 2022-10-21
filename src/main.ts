@@ -14,7 +14,7 @@ async function runFlake8() {
       },
     }
   };
-  await exec.exec('flake8 --exit-zero', [], options);
+  await exec.exec(`flake8 --exit-zero ${core.getInput("path")}`, [], options);
   return myOutput;
 }
 
